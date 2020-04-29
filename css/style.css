@@ -1,0 +1,251 @@
+body{
+    background: linear-gradient( to bottom right,rgb(192, 210, 240),rgba(192, 210, 240,0.3));
+    /* text-transform: capitalize; */
+    text-align: justify;
+    font-size: 1.15em;
+    font-family: 'Josefin Sans', sans-serif;
+
+
+    /* font-family: 'Times New Roman', serif */
+    /* font-family: Arial,  sans-serif */
+
+    /* font-size: 2em; */
+  /*  background: url("https://bestoftexaslandscapes.com/wp-content/uploads/2019/06/BOT_Website-Hero-Image_travis-heights.png")
+     background: rgb(192, 210, 240);
+   background-color:
+   bakcground-image:
+ */}
+.title{
+    color: rgb(183, 132, 15);
+    font-family: 'PT Sans', sans-serif;
+
+    /* font-weight: 400s */
+}
+.subtitle{
+    color: rgb(153, 102, 51);
+    font-family: 'PT Sans', sans-serif;
+
+} 
+#contact-us{
+    color: green;
+}
+/*suedo selelctor start*/
+h2:hover{
+color:red;
+}
+ /* li:first-child{
+color:green;
+} 
+ li:last-child{
+    color:chocolate;
+    }
+ li:nth-child(2){
+    color:yellowgreen;
+}
+li:only-child{
+    color:rgb(0, 55, 128)
+}
+td:nth-child(2){
+    color:yellowgreen;
+} */
+/* #youtube-link:link{
+    color:blue;
+}
+#youtube-link:visited{
+    color:red;
+} */
+/*suedo selelctor end*/
+/*sibling /child  slelectors start*/
+h2+a{
+    color:blue
+}
+/*in the same parent*/
+textarea~button{
+    color:red
+}
+ul>li{
+    color: blue;
+}
+/*Descedent selectors starts here*/
+ ul li{
+color: orange;
+} 
+/*attribute slelectors*/
+h2[class=subtitle]{
+    color:indigo;
+    }
+/* ^--start $--end *--anywhere */
+img[src^="../img/"] {
+    border:10px solid black
+}   
+/* class="1  2"  2 will*/
+h3[class~=article-subtitle]{
+  background-color:cadetblue
+}
+/* equals or  concat with -  ex  subtitle or subtile- */
+h3[class|=article-subtitle]{
+    background-color:cadetblue
+  }  
+  #title{
+
+  }
+  .paragraph{
+
+  }
+  .form-input{
+
+  }
+  #service-image{
+      height: 465px;
+      width: 70%;
+      background: url("../img/img-2.jpg");
+    /*   background-repeat: no-repeat; */
+    background-size:cover;
+      background-color: steelblue;
+      border:5px dashed saddlebrown/* double dotted solid*/
+  }
+  #gradient-div{
+    height: 465px;
+    /* height: 400vh;relative */
+
+     width: 70%;
+    /* width:70vw; relative */
+
+    background:radial-gradient( circle, red 20%,green 40%,blue 40%)
+    /* background: linear-gradient( 218deg,rgb(94, 256, 51),rgb(0, 0, 0)); */
+
+   /*  background: linear-gradient( to bottom right,rgb(94, 256, 51),rgb(0, 0, 0)); */
+    /* background: linear-gradient( to right,rgb(94, 256, 51),rgb(0, 0, 0)); */
+    /* background: linear-gradient( to right,red,blue); */
+  /*   background-repeat: no-repeat; */
+  /* background-size:cover;
+    background-color: steelblue; */
+
+  }
+  .link{
+      text-decoration-line: none;
+    /*   text-decoration-line: overline;
+      text-decoration-line: line-through
+ */
+
+  }
+  .italics{
+      font-style: italic;
+  }
+  #about-us-img{
+      height: 400px;
+      width: 60%;
+      border: 4px solid  indigo;
+      padding: 20px;/*all sides*/
+      padding-left: 10px;
+      padding-top: 15px;
+      padding-right: 5px;
+      padding:0px 0px 0 0px; /* top r b left*/
+      margin:10px 20px;/* topbot leftright*/
+      float: right;
+
+      /* margin:10px; */
+
+  }
+  #table{
+      display: inline-block;
+      margin: 10px;
+      /* display: flex;
+       */
+  }
+  .container{
+      background-color: rgb(250, 240, 240);
+      margin: 10px;
+      height: 300px;
+      display: flex;
+      flex-direction: row;
+      /*column column-reverse row-reverse*/
+      /* flex-wrap: wrap; *//* wraps in multiple lines*/
+      justify-content:center ;/*center flex-end  flex-start   space-around*/
+      align-items: center;/* adjustes size not occupy entire contianer height  default stretch*/
+      
+  }
+  .container-item{
+      background-color: green;
+      color:white;
+      font-size: 25px;
+      margin: 10px;
+     line-height: 50px;
+      width: 70px;
+      text-align: center;
+      
+  }
+  .grid-container{
+      background-color: rgba(94, 18, 18, 0.4);
+      margin:10px;
+      height: 500px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto;
+      /* grid-column-gap: 300px;
+      grid-row-gap: 150px;
+      grid-gap: 300px 150px; */
+/*       grid-template-columns: 20px 50px 60px;
+      grid-template-rows: 50px 30px; */
+      /* justify-content: space-around;space-around  start center space-evenly */
+      /* align-content: space-between;  removes  streches*/
+  }
+  .grid-item{
+    background-color: green;
+    color:white;
+    font-size: 25px;
+    margin: 10px;
+   line-height: 40px;
+    width: 70px;
+    text-align: center;
+    
+}
+.submit-button{
+    margin: 10px 20px;
+    padding: 10px 15 px;
+    border: none;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background: rgb(89, 150, 255);
+    /* transform: translate(50px,30px); */
+    /* transform: scale(2);doubles */
+     /* transform: rotate(-45deg) ; */
+/* transform: skewX(-50deg); */
+transform: matrix(1,0.45,0.45,1,100,50);
+    -webkit-transition: background,padding  300ms ease-in-out ;
+    -moz-transition: background ,padding 300ms ease-in-out ;
+
+}
+.submit-button:hover{
+    background:rgb(30, 60, 20);
+     padding: 15px 20px;
+     
+}
+.test-animation{
+    /* animation-name: red-to-black;
+    animation-duration: 6s;
+    animation-timing-function:linear;
+    animation-delay: 2s;
+    animation-iteration-count: 2;/*infinite for ever
+    animation-direction: reverse; */
+    animation: red-to-black 6s linear 2s 2 reverse ;
+}
+@keyframes red-to-black{
+    0%{
+        background: red;
+        transform: translate(0px,0px)
+    }
+    50%{
+        background: yellow;
+        transform: translate(10px,10px)
+    
+    }
+    100%{
+        background: black;
+        transform: translate(20px,20px)
+    
+    }
+}
