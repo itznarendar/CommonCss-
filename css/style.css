@@ -249,3 +249,29 @@ transform: matrix(1,0.45,0.45,1,100,50);
     
     }
 }
+/* flexbox*/
+.main-column{
+    flex 3
+    order 2}
+.side-bar{
+    flex 1
+    order 1}
+.nav-bar{
+    flex 3
+    order 3
+    flex-basis:30%;/*width*/
+}
+.container{
+    display:flex;
+    align-items:stretch/*default */;
+    justify-content:space-between;
+    flex-wrap:wrap;/*when images  size fixed
+}
+.@media(min-width:900px){
+    .container{
+        display:flex;
+        justify-content:space-between;}}
+
+}
+    /*https://codepen.io/anon/pen/VKxRoE?editors=1100*/
+        
